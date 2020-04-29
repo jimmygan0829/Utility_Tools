@@ -335,7 +335,7 @@ else:
     site_select = int(input("select a site to monitor, 1 for packershoes, 2 for Undefeated (Upcoming): "))
     monitor_link = input("please enter the url of the product that you wanna monitor: ")
     delay = float(input('please input a desired delay, unit is float: '))
-    new_arrival = int(input("toggle for new arrival/restock monitor "))
+    #new_arrival = int(input("toggle for new arrival/restock monitor "))
     #print("monitor will start immediately, press 'c' to exit the program")#change the input link")
     map1 = {}
     map2 = {}
@@ -356,7 +356,7 @@ else:
                 temp_response = requests.get(monitor_link)
                 send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
                 break
-        if new_arrival == 1:
+       
 
 
 
