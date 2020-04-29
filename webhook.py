@@ -63,7 +63,7 @@ def monitor_link_packer( link,sizing_info_map,monitor_map):
                 send_command = 1
                 monitor_map[product['sku']] = product['inventory_quantity']
         item = product['sku']
-        if idx %2 == 0:
+        if idx %2 == 0: # current items in the map ready to pack and send
             if monitor_map[item] != 0:
                 single_field = sizing_info_map[item]
                 single_field.append(str(monitor_map[item]))
@@ -83,13 +83,10 @@ def monitor_link_packer( link,sizing_info_map,monitor_map):
     output_fields["atc2"] = atc2
     if send_command == 1:
         if webhook_format == 1:
-    
             Cyber_webhook(user_name= author_name, avi_url=author_icon_url,webhook_link=webhook_url,info_dic=output_info_dict,fields= output_fields,custom = customize)
         if webhook_format == 2:
-            
             Balko_webhook(user_name= author_name, avi_url=author_icon_url,webhook_link=webhook_url,info_dic=output_info_dict,fields= output_fields,custom = customize)
         if webhook_format == 3:
-           
             TKS_webhook(user_name= author_name, avi_url=author_icon_url,webhook_link=webhook_url,info_dic=output_info_dict,fields= output_fields,custom = customize)
     
     return True
@@ -334,11 +331,15 @@ else:
     inpo = input("please press 's' to start: ")
     site_select = int(input("select a site to monitor, 1 for packershoes, 2 for Undefeated (Upcoming): "))
     monitor_link = input("please enter the url of the product that you wanna monitor: ")
-    delay = float(input('please input a desired delay, unit is float: '))
-    #new_arrival = int(input("toggle for new arrival/restock monitor "))
+    delay = float(input('please input a desired delay, unit is seconds: '))
+    new_arrival = int(input("toggle for new arrival/restock monitor (0 for NO, 1 for YES): "))
     #print("monitor will start immediately, press 'c' to exit the program")#change the input link")
     map1 = {}
-    map2 = {}
+    map2 = {} # for link monitor
+    if new_arrival == 1:
+        map3 = {} # for new arrival monitor
+        map4 = {}
+        new_product = ''
     while inpo == 's':
 
         #if keyboard.is_pressed('c'):
@@ -350,13 +351,51 @@ else:
             # map2 = {}
             #break
         #else: 
+
         if site_select == 1:
             status_check =monitor_link_packer(link = monitor_link,sizing_info_map=map1,monitor_map=map2)
             if status_check == False:
                 temp_response = requests.get(monitor_link)
                 send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
                 break
-       
+            if new_arrival == 1:
+                poo = requests.get('https://packershoes.com/products.json') 
+                try:
+                    p2 = json.loads(poo.text)   #check 
+                except:
+                    send_error_msg(content=p2.text[:1000],url_error=webhook_url)
+
+                all_new_products = jsonpath.jsonpath(p2, "$.products")[0] #check
+                if all_new_products == False:
+                    send_error_msg(content=p2.text[:1000],url_error=webhook_url)
+                newest = all_new_products[0] #take the newest product
+                if new_product == '': # initialize the product title, monitor by product name 
+                    new_product = newest['title']
+                else:
+                    if new_product == newest['title']:    # No updated new arrivals yet, check if stock change
+                        new_link = 'https://packershoes.com/products/'+newest['handle']
+                        status_check = monitor_link_packer(link = new_link, sizing_info_map = map3, monitor_map = map4)
+                        if status_check == False:
+                            temp_response = requests.get(new_link)
+                            send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
+                            print(temp_response.text)
+                            break
+                    else:# New product found 
+                        new_product = newest['title']
+                        new_link = 'https://packershoes.com/products/'+newest['handle']
+                        map3 = {}
+                        map4 = {}
+                        status_check = monitor_link_packer(link = new_link, sizing_info_map = map3, monitor_map = map4)
+                        if status_check == False:
+                            temp_response = requests.get(new_link)
+                            send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
+                            print(temp_response.text)
+                            break
+
+                     
+
+
+
 
 
 
