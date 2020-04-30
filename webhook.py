@@ -291,7 +291,9 @@ def Cyber_webhook(user_name, avi_url, webhook_link, info_dic, fields,custom): #i
 
 
 
-
+error_retry = 500
+sleep_time = 10 # in seconds
+flagged = 0
 
 
 if mode == 1 :
@@ -351,23 +353,57 @@ else:
             # map2 = {}
             #break
         #else: 
+        if error_retry == 0:
+            print('maximum retry reached, ending program now')
+            break
 
         if site_select == 1:
             status_check =monitor_link_packer(link = monitor_link,sizing_info_map=map1,monitor_map=map2)
             if status_check == False:
+                flagged == 1
                 temp_response = requests.get(monitor_link)
+                print(datetime_cyberize(str(datetime.datetime.now())),'\n')
+                print(temp_response,'\n')
                 send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
-                break
+                error_retry = error_retry -1
+                delay+=1
+                time.sleep(sleep_time)
+                sleep_time+=sleep_time*10
+                continue
+            else:
+                if flagged == 1:
+                    delay-=0.01
+                    sleep_time-=sleep_time*0.01
+                    if sleep_time<=0:
+                        sleep_time = 10
+
             if new_arrival == 1:
                 poo = requests.get('https://packershoes.com/products.json') 
                 try:
                     p2 = json.loads(poo.text)   #check 
                 except:
-                    send_error_msg(content=p2.text[:1000],url_error=webhook_url)
+                    flagged == 1
+                    print(datetime_cyberize(str(datetime.datetime.now())),'\n')
+                    print(poo,'\n')
+                    send_error_msg(content=poo.text[:1000],url_error=webhook_url)
+                    error_retry = error_retry -1
+                    delay+=1
+                    time.sleep(sleep_time)
+                    sleep_time+=sleep_time*10
+                    continue
+
 
                 all_new_products = jsonpath.jsonpath(p2, "$.products")[0] #check
                 if all_new_products == False:
-                    send_error_msg(content=p2.text[:1000],url_error=webhook_url)
+                    flagged == 1
+                    print(datetime_cyberize(str(datetime.datetime.now())),'\n')
+                    print(poo,'\n')
+                    send_error_msg(content=poo.text[:1000],url_error=webhook_url)
+                    error_retry = error_retry -1
+                    delay+=1
+                    time.sleep(sleep_time)
+                    sleep_time+=sleep_time*10
+                    continue
                 newest = all_new_products[0] #take the newest product
                 if new_product == '': # initialize the product title, monitor by product name 
                     new_product = newest['title']
@@ -375,11 +411,26 @@ else:
                     if new_product == newest['title']:    # No updated new arrivals yet, check if stock change
                         new_link = 'https://packershoes.com/products/'+newest['handle']
                         status_check = monitor_link_packer(link = new_link, sizing_info_map = map3, monitor_map = map4)
+
                         if status_check == False:
+                            flagged == 1
                             temp_response = requests.get(new_link)
+                            print(datetime_cyberize(str(datetime.datetime.now())),'\n')
+                            print(temp_response,'\n')
                             send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
-                            print(temp_response.text)
-                            break
+                            error_retry = error_retry -1
+                            delay+=1
+                            time.sleep(sleep_time)
+                            sleep_time+=sleep_time*10
+                            continue
+                        else:
+                            if flagged == 1:
+                                delay-=0.01
+                                sleep_time-=sleep_time*0.01
+                                if sleep_time<=0:
+                                    sleep_time = 10
+                            
+                            
                     else:# New product found 
                         new_product = newest['title']
                         new_link = 'https://packershoes.com/products/'+newest['handle']
@@ -388,18 +439,18 @@ else:
                         status_check = monitor_link_packer(link = new_link, sizing_info_map = map3, monitor_map = map4)
                         if status_check == False:
                             temp_response = requests.get(new_link)
+                            print(datetime_cyberize(str(datetime.datetime.now())),'\n')
+                            print(temp_response,'\n')
                             send_error_msg(content=temp_response.text[:1000],url_error=webhook_url)
-                            print(temp_response.text)
-                            break
-
-                     
-
-
-
-
-
-
-
+                            error_retry = error_retry -1
+                            delay+=1
+                        else:
+                            if  flagged == 1:
+                                delay-=0.01
+                                sleep_time-=sleep_time*0.01
+                                if sleep_time<=0:
+                                    sleep_time = 10
+                            
         time.sleep(delay)
 
 
