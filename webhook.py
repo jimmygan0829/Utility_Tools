@@ -64,16 +64,15 @@ def monitor_link_packer( link,sizing_info_map,monitor_map):
                 monitor_map[product['sku']] = product['inventory_quantity']
         item = product['sku']
         if idx %2 == 0: # current items in the map ready to pack and send
-            if monitor_map[item] != 0:
-                single_field = sizing_info_map[item]
-                single_field.append(str(monitor_map[item]))
-
-                atc1.append(tuple(single_field))
+            
+            single_field = sizing_info_map[item]
+            single_field.append(str(monitor_map[item]))
+            atc1.append(tuple(single_field))
         else:
-            if monitor_map[item] != 0:
-                single_field = sizing_info_map[item]
-                single_field.append(str(monitor_map[item]))
-                atc2.append(tuple(single_field))
+            
+            single_field = sizing_info_map[item]
+            single_field.append(str(monitor_map[item]))
+            atc2.append(tuple(single_field))
     
     
     total_stock = sum(monitor_map.values())
@@ -452,6 +451,7 @@ else:
                                     sleep_time = 10
                             
         time.sleep(delay)
+        print('current delay is ',delay)
 
 
 
