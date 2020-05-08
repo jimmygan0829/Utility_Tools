@@ -1,0 +1,148 @@
+Random,gate.smartproxy.com,10000 - 49999
+USA,us.smartproxy.com,10001 - 29999
+Canada,ca.smartproxy.com,20001 - 29999
+GB,gb.smartproxy.com,30001 - 49999
+Germany,de.smartproxy.com,20001 - 29999
+France,fr.smartproxy.com,40001 - 49999
+Spain,es.smartproxy.com,10001 - 19999
+Italy,it.smartproxy.com,20001 - 29999
+Sweden,se.smartproxy.com,20001 - 29999
+Greece,gr.smartproxy.com,30001 - 39999
+Portugal,pt.smartproxy.com,20001 - 29999
+Netherlands,nl.smartproxy.com,10001 - 19999
+Belgium,be.smartproxy.com,40001 - 49999
+Russia,ru.smartproxy.com,40001 - 49999
+Ukraine,ua.smartproxy.com,40001 - 49999
+Poland,pl.smartproxy.com,20001 - 29999
+Israel,il.smartproxy.com,30001 - 39999
+Turkey,tr.smartproxy.com,40001 - 49999
+Australia,au.smartproxy.com,30001 - 39999
+Malaysia,my.smartproxy.com,30001 - 39999
+Thailand,th.smartproxy.com,30001 - 39999
+South Korea,kr.smartproxy.com,10001 - 19999
+Japan,jp.smartproxy.com,30001 - 39999
+Philippines,ph.smartproxy.com,40001 - 49999
+Singapore,sg.smartproxy.com,10001 - 19999
+China,cn.smartproxy.com,30001 - 39999
+Hong Kong,hk.smartproxy.com,10001 - 19999
+Taiwan,tw.smartproxy.com,20001 - 29999
+India,in.smartproxy.com,10001 - 19999
+Pakistan,pk.smartproxy.com,10001 - 19999
+Iran,ir.smartproxy.com,30001 - 39999
+Indonesia,id.smartproxy.com,10001 - 19999
+Azerbaijan,az.smartproxy.com,30001 - 39999
+Kazakhstan,kz.smartproxy.com,40001 - 49999
+UAE,ae.smartproxy.com,20001 - 29999
+Mexico,mx.smartproxy.com,20001 - 29999
+Brazil,br.smartproxy.com,10001 - 19999
+Argentina,ar.smartproxy.com,10001 - 19999
+Chile,cl.smartproxy.com,30001 - 39999
+Peru,pe.smartproxy.com,40001 - 49999
+Ecuador,ec.smartproxy.com,20001 - 29999
+Colombia,co.smartproxy.com,30001 - 39999
+South Africa,za.smartproxy.com,40001 - 49999
+Egypt,eg.smartproxy.com,20001 - 29999
+Angola,ao.smartproxy.com,18001 - 18999
+Cameroon,cm.smartproxy.com,19001 - 19999
+Central African Republic,cf.smartproxy.com,10001 - 10999
+Chad,td.smartproxy.com,11001 - 11999
+Benin,bj.smartproxy.com,12001 - 12999
+Ethiopia,et.smartproxy.com,13001 - 13999
+Djibouti,dj.smartproxy.com,14001 - 14999
+Gambia,gm.smartproxy.com,15001 - 15999
+Ghana,gh.smartproxy.com,43001 - 43999
+Kenya,ke.smartproxy.com,45001 - 45999
+Liberia,lr.smartproxy.com,46001 - 46999
+Madagascar,mg.smartproxy.com,47001 - 47999
+Mali,ml.smartproxy.com,48001 - 48999
+Mauritania,mr.smartproxy.com,16001 - 16999
+Mauritius,mu.smartproxy.com,17001 - 17999
+Morocco,ma.smartproxy.com,40001 - 40999
+Mozambique,mz.smartproxy.com,41001 - 41999
+Nigeria,ng.smartproxy.com,42001 - 42999
+Senegal,sn.smartproxy.com,49001 - 49999
+Seychelles,sc.smartproxy.com,10001 - 10999
+Zimbabwe,zw.smartproxy.com,11001 - 11999
+South Sudan,ss.smartproxy.com,12001 - 12999
+Sudan,sd.smartproxy.com,31001 - 31999
+Togo,tg.smartproxy.com,32001 - 32999
+Tunisia,tn.smartproxy.com,33001 - 33999
+Uganda,ug.smartproxy.com,34001 - 34999
+Zambia,zm.smartproxy.com,35001 - 35999
+Afghanistan,af.smartproxy.com,36001 - 36999
+Bahrain,bh.smartproxy.com,37001 - 37999
+Bangladesh,bd.smartproxy.com,41001 - 41999
+Bhutan,bt.smartproxy.com,45001 - 45999
+Myanmar,mm.smartproxy.com,46001 - 46999
+Cambodia,kh.smartproxy.com,47001 - 47999
+Iraq,iq.smartproxy.com,44001 - 44999
+Jordan,jo.smartproxy.com,26001 - 26999
+Lebanon,lb.smartproxy.com,27001 - 27999
+Maldives,mv.smartproxy.com,28001 - 28999
+Mongolia,mn.smartproxy.com,29001 - 29999
+Oman,om.smartproxy.com,30001 - 30999
+Qatar,qa.smartproxy.com,44001 - 44999
+Saudi Arabia,sa.smartproxy.com,45001 - 45999
+Turkmenistan,tm.smartproxy.com,47001 - 47999
+Uzbekistan,uz.smartproxy.com,48001 - 48999
+Yemen,ye.smartproxy.com,49001 - 49999
+Albania,al.smartproxy.com,33001 - 33999
+Andorra,ad.smartproxy.com,34001 - 34999
+Austria,at.smartproxy.com,35001 - 35999
+Armenia,am.smartproxy.com,42001 - 42999
+Bosnia and Herzegovina,ba.smartproxy.com,37001 - 37999
+Bulgaria,bg.smartproxy.com,38001 - 38999
+Belarus,by.smartproxy.com,39001 - 39999
+Croatia,hr.smartproxy.com,40001 - 40999
+Cyprus,cy.smartproxy.com,48001 - 48999
+Czech Republic,cz.smartproxy.com,26001 - 26999
+Denmark,dk.smartproxy.com,27001 - 27999
+Estonia,ee.smartproxy.com,28001 - 28999
+Finland,fi.smartproxy.com,41001 - 41999
+Georgia,ge.smartproxy.com,43001 - 43999
+Hungary,hu.smartproxy.com,43001 - 43999
+Iceland,is.smartproxy.com,23001 - 23999
+Ireland,ie.smartproxy.com,24001 - 24999
+Latvia,lv.smartproxy.com,22001 - 22999
+Liechtenstein,li.smartproxy.com,23001 - 23999
+Lithuania,lt.smartproxy.com,24001 - 24999
+Luxembourg,lu.smartproxy.com,25001 - 25999
+Monaco,mc.smartproxy.com,10001 - 10999
+Moldova,md.smartproxy.com,11001 - 11999
+Montenegro,me.smartproxy.com,12001 - 12999
+Norway,no.smartproxy.com,13001 - 13999
+Romania,ro.smartproxy.com,13001 - 13999
+Serbia,rs.smartproxy.com,14001 - 14999
+Slovakia,sk.smartproxy.com,15001 - 15999
+Slovenia,si.smartproxy.com,16001 - 16999
+Switzerland,ch.smartproxy.com,29001 - 29999
+Macedonia,mk.smartproxy.com,30001 - 30999
+Bahamas,bs.smartproxy.com,17001 - 17999
+Belize,bz.smartproxy.com,18001 - 18999
+British Virgin Islands,vg.smartproxy.com,19001 - 19999
+Costa Rica,cr.smartproxy.com,31001 - 31999
+Cuba,cu.smartproxy.com,32001 - 32999
+Dominica,dm.smartproxy.com,17001 - 17999
+Haiti,ht.smartproxy.com,18001 - 18999
+Honduras,hn.smartproxy.com,19001 - 19999
+Jamaica,jm.smartproxy.com,20001 - 20999
+Aruba,aw.smartproxy.com,21001 - 21999
+Panama,pa.smartproxy.com,20001 - 20999
+Puerto Rico,pr.smartproxy.com,21001 - 21999
+Trinidad and Tobago,tt.smartproxy.com,22001 - 22999
+Fiji,fj.smartproxy.com,38001 - 38999
+New Zealand,nz.smartproxy.com,39001 - 39999
+Bolivia,bo.smartproxy.com,40001 - 40999
+Paraguay,py.smartproxy.com,14001 - 14999
+Uruguay,uy.smartproxy.com,15001 - 15999
+Côte d'Ivoire,ci.smartproxy.com,44001 - 44999
+Syria,sy.smartproxy.com,20001 - 20999
+New York,city.smartproxy.com,21001 - 21049
+Los Angeles,city.smartproxy.com,21051 - 21099
+Chicago,city.smartproxy.com,21101 - 21149
+Houston,city.smartproxy.com,21151 - 21199
+Miami,city.smartproxy.com,21201 - 21249
+London,city.smartproxy.com,21251 - 21299
+Berlin,city.smartproxy.com,21301 - 21349
+Moscow,city.smartproxy.com,21351 - 21399
+Vietnam,vn.smartproxy.com,46001 - 46999

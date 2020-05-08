@@ -1,0 +1,148 @@
+Random,gate.smartproxy.com,7000
+USA,us.smartproxy.com,10000
+Canada,ca.smartproxy.com,20000
+GB,gb.smartproxy.com,30000
+Germany,de.smartproxy.com,20000
+France,fr.smartproxy.com,40000
+Spain,es.smartproxy.com,10000
+Italy,it.smartproxy.com,20000
+Sweden,se.smartproxy.com,20000
+Greece,gr.smartproxy.com,30000
+Portugal,pt.smartproxy.com,20000
+Netherlands,nl.smartproxy.com,10000
+Belgium,be.smartproxy.com,40000
+Russia,ru.smartproxy.com,40000
+Ukraine,ua.smartproxy.com,40000
+Poland,pl.smartproxy.com,20000
+Israel,il.smartproxy.com,30000
+Turkey,tr.smartproxy.com,40000
+Australia,au.smartproxy.com,30000
+Malaysia,my.smartproxy.com,30000
+Thailand,th.smartproxy.com,30000
+South Korea,kr.smartproxy.com,10000
+Japan,jp.smartproxy.com,30000
+Philippines,ph.smartproxy.com,40000
+Singapore,sg.smartproxy.com,10000
+China,cn.smartproxy.com,30000
+Hong Kong,hk.smartproxy.com,10000
+Taiwan,tw.smartproxy.com,20000
+India,in.smartproxy.com,10000
+Pakistan,pk.smartproxy.com,10000
+Iran,ir.smartproxy.com,30000
+Indonesia,id.smartproxy.com,10000
+Azerbaijan,az.smartproxy.com,30000
+Kazakhstan,kz.smartproxy.com,40000
+UAE,ae.smartproxy.com,20000
+Mexico,mx.smartproxy.com,20000
+Brazil,br.smartproxy.com,10000
+Argentina,ar.smartproxy.com,10000
+Chile,cl.smartproxy.com,30000
+Peru,pe.smartproxy.com,40000
+Ecuador,ec.smartproxy.com,20000
+Colombia,co.smartproxy.com,30000
+South Africa,za.smartproxy.com,40000
+Egypt,eg.smartproxy.com,20000
+Angola,ao.smartproxy.com,18000
+Cameroon,cm.smartproxy.com,19000
+Central African Republic,cf.smartproxy.com,10000
+Chad,td.smartproxy.com,11000
+Benin,bj.smartproxy.com,12000
+Ethiopia,et.smartproxy.com,13000
+Djibouti,dj.smartproxy.com,14000
+Gambia,gm.smartproxy.com,15000
+Ghana,gh.smartproxy.com,43000
+Kenya,ke.smartproxy.com,45000
+Liberia,lr.smartproxy.com,46000
+Madagascar,mg.smartproxy.com,47000
+Mali,ml.smartproxy.com,48000
+Mauritania,mr.smartproxy.com,16000
+Mauritius,mu.smartproxy.com,17000
+Morocco,ma.smartproxy.com,40000
+Mozambique,mz.smartproxy.com,41000
+Nigeria,ng.smartproxy.com,42000
+Senegal,sn.smartproxy.com,49000
+Seychelles,sc.smartproxy.com,10000
+Zimbabwe,zw.smartproxy.com,11000
+South Sudan,ss.smartproxy.com,12000
+Sudan,sd.smartproxy.com,31000
+Togo,tg.smartproxy.com,32000
+Tunisia,tn.smartproxy.com,33000
+Uganda,ug.smartproxy.com,34000
+Zambia,zm.smartproxy.com,35000
+Afghanistan,af.smartproxy.com,36000
+Bahrain,bh.smartproxy.com,37000
+Bangladesh,bd.smartproxy.com,41000
+Bhutan,bt.smartproxy.com,45000
+Myanmar,mm.smartproxy.com,46000
+Cambodia,kh.smartproxy.com,47000
+Iraq,iq.smartproxy.com,44000
+Jordan,jo.smartproxy.com,26000
+Lebanon,lb.smartproxy.com,27000
+Maldives,mv.smartproxy.com,28000
+Mongolia,mn.smartproxy.com,29000
+Oman,om.smartproxy.com,30000
+Qatar,qa.smartproxy.com,44000
+Saudi Arabia,sa.smartproxy.com,45000
+Turkmenistan,tm.smartproxy.com,47000
+Uzbekistan,uz.smartproxy.com,48000
+Yemen,ye.smartproxy.com,49000
+Albania,al.smartproxy.com,33000
+Andorra,ad.smartproxy.com,34000
+Austria,at.smartproxy.com,35000
+Armenia,am.smartproxy.com,42000
+Bosnia and Herzegovina,ba.smartproxy.com,37000
+Bulgaria,bg.smartproxy.com,38000
+Belarus,by.smartproxy.com,39000
+Croatia,hr.smartproxy.com,40000
+Cyprus,cy.smartproxy.com,48000
+Czech Republic,cz.smartproxy.com,26000
+Denmark,dk.smartproxy.com,27000
+Estonia,ee.smartproxy.com,28000
+Finland,fi.smartproxy.com,41000
+Georgia,ge.smartproxy.com,43000
+Hungary,hu.smartproxy.com,43000
+Iceland,is.smartproxy.com,23000
+Ireland,ie.smartproxy.com,24000
+Latvia,lv.smartproxy.com,22000
+Liechtenstein,li.smartproxy.com,23000
+Lithuania,lt.smartproxy.com,24000
+Luxembourg,lu.smartproxy.com,25000
+Monaco,mc.smartproxy.com,10000
+Moldova,md.smartproxy.com,11000
+Montenegro,me.smartproxy.com,12000
+Norway,no.smartproxy.com,13000
+Romania,ro.smartproxy.com,13000
+Serbia,rs.smartproxy.com,14000
+Slovakia,sk.smartproxy.com,15000
+Slovenia,si.smartproxy.com,16000
+Switzerland,ch.smartproxy.com,29000
+Macedonia,mk.smartproxy.com,30000
+Bahamas,bs.smartproxy.com,17000
+Belize,bz.smartproxy.com,18000
+British Virgin Islands,vg.smartproxy.com,19000
+Costa Rica,cr.smartproxy.com,31000
+Cuba,cu.smartproxy.com,32000
+Dominica,dm.smartproxy.com,17000
+Haiti,ht.smartproxy.com,18000
+Honduras,hn.smartproxy.com,19000
+Jamaica,jm.smartproxy.com,20000
+Aruba,aw.smartproxy.com,21000
+Panama,pa.smartproxy.com,20000
+Puerto Rico,pr.smartproxy.com,21000
+Trinidad and Tobago,tt.smartproxy.com,22000
+Fiji,fj.smartproxy.com,38000
+New Zealand,nz.smartproxy.com,39000
+Bolivia,bo.smartproxy.com,40000
+Paraguay,py.smartproxy.com,14000
+Uruguay,uy.smartproxy.com,15000
+Côte d'Ivoire,ci.smartproxy.com,44000
+Syria,sy.smartproxy.com,20000
+New York,city.smartproxy.com,21000
+Los Angeles,city.smartproxy.com,21050
+Chicago,city.smartproxy.com,21100
+Houston,city.smartproxy.com,21150
+Miami,city.smartproxy.com,21200
+London,city.smartproxy.com,21250
+Berlin,city.smartproxy.com,21300
+Moscow,city.smartproxy.com,21350
+Vietnam,vn.smartproxy.com,46000
